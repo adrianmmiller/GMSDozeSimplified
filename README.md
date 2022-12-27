@@ -15,7 +15,7 @@ cd /data/data
 find . -type f -name '*gms*' -delete
 ```
 
-**What it does/How it works:**
+### What it does/How it works: ###
 
 - The module automates finding the correct path to google.xml under the following (currently known) paths:
   - /system 
@@ -47,19 +47,49 @@ find . -type f -name '*gms*' -delete
 ```
 
 
-**Usage:**
+### Installation/Usage: ###
 
 - Install via Magisk Manager
+- If module intalls successfully, test its doing its job typing in terminal:
+```
+gmsc
+```
+
+The return will tell you if GMS is optimized or not
+
+**Note:** gmsc script is the work of gloeyisk, creator of the most well known GMS Doze module.
 
 The module will create a logfile (/storage/emulated/0/GMSDozeInstall.log) on install, which mirrors the information onscreen. If you have any issues, you'll need to start by looking there, and by opening an issue on this repo's Issues
 
 
-**Troubleshooting**
+### Troubleshooting ###
 
 As mentioned, the module ONLY searches the noted paths above. If you find the module fails to install, check the install log at: 
-/storage/emulated/0/GMSDozeInstall.log. If it tells you the path isnt found, please try the following, in a root temrinal prompt, and then feel free to either trying adding the path yourself to 
+/storage/emulated/0/GMSDozeInstall.log. If it tells you the path isnt found, please try the following, in a root temrinal prompt, and then feel free to either trying adding the path yourself by:
+
+1) Extracting the module to its own folder (GMSDozeSimplified)
+2) Opening /common/install.sh in a text editor (NotePad++ recommended)
+3) Edit line 4:
+
+```
+gxml=$(find /system /system_ext /product /vendor /india /my_bigball -not -path "*product/etc/preferred-apps*" -name "google.xml" -maxdepth 4 -print 2> /dev/null | sed 's|/[^/]*$||')
+```
+to add your path anywhere between **find**  and **-not**, where the other paths are, being mindful to have a space separating your path from the existing ones.
+
+4) Save the install.sh file
+5) Go back to the root of the extracted folder containing all the modules files 
+6) Select the contents of the folder and zip them (preferably with Z-7ip, as we have shared with Magisk devs, WinRAR can created borked zip files that will fail to install)
+7) Move zip file to device and flash, and test.
+8) If module now installs, test its doing its job typing in terminal:
+
+```
+gmsc
+````
+9) If all is well, please let me know via Issues or email (shown on y Github profile, so i can add the path and issue a new release.
 
 
+
+### Licensing ###
 
 **Please note:** the included LICENSE **only** covers the module components provided by the excellent work of Zack5tpg's 
 Magisk Module Extended, which is available for here for module creators
