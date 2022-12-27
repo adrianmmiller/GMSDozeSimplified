@@ -7,21 +7,21 @@ if [[ -z $gxml ]]
 then
     ui_print "google.xml NOT found in modules expected paths" 2>&1 | tee -a $LogFile
     ui_print "please read the Troublehooting section of the repo" 2>&1 | tee -a $LogFile
-  	ui_print "and also post an issue or PM 73sydney at XDA" 2>&1 | tee -a $LogFile
-	  abort "GMS Doze Install: Incomplete" 2>&1 | tee -a $LogFile
+    ui_print "and also post an issue or PM 73sydney at XDA" 2>&1 | tee -a $LogFile
+    abort "GMS Doze Install: Incomplete" 2>&1 | tee -a $LogFile
 else
     for i in $gxml
     do
         ui_print "google.xml found at: $i" 2>&1 | tee -a $LogFile
 	      root_folder=$(echo $i | cut -d "/" -f2)
 	      if [ "$root_folder" == "system" ]; then
-		        #use the standard /system folder path
-		        finalgxmlpath="system/etc/sysconfig"
+	          #use the standard /system folder path
+		  finalgxmlpath="system/etc/sysconfig"
 	      else
-		        #add /system folder prefix for product, system_ext and vendor paths
-		        finalgxmlpath="system/$i"
-		        ui_print "creating directory: $MODPATH/$finalgxmlpath" 2>&1 | tee -a $LogFile
-		        mkdir -p "$MODPATH/$finalgxmlpath"
+	          #add /system folder prefix for product, system_ext and vendor paths
+		  finalgxmlpath="system/$i"
+		  ui_print "creating directory: $MODPATH/$finalgxmlpath" 2>&1 | tee -a $LogFile
+		  mkdir -p "$MODPATH/$finalgxmlpath"
 	      fi
 	      #copy original google.xml file to modules path and correct path under it
 	      ui_print "copying $i/google.xml to $MODPATH/$finalgxmlpath" 2>&1 | tee -a $LogFile
