@@ -94,14 +94,14 @@ All other work is credited above and **no one may fork or re-present this module
 
 ### Changelog: ###
 
-Please see: https://github.com/stylemessiah/GMSDozeSimplified/blob/main/CHANGELOG.md
+Please see: https://github.com/adrianmmiller/GMSDozeSimplified/blob/main/CHANGELOG.md
 
 
 ### Project Stats: ###
 
-![GitHub release (latest by date)](https://img.shields.io/github/v/release/stylemessiah/GMSDozeSimplified?label=Release&style=plastic)
-![GitHub Release Date](https://img.shields.io/github/release-date/stylemessiah/GMSDozeSimplified?label=Release%20Date&style=plastic)
-![GitHub Releases](https://img.shields.io/github/downloads/stylemessiah/GMSDozeSimplified/latest/total?label=Downloads%20%28Latest%20Release%29&style=plastic)
-![GitHub All Releases](https://img.shields.io/github/downloads/stylemessiah/GMSDozeSimplified/total?label=Total%20Downloads%20%28All%20Releases%29&style=plastic)
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/adrianmmiller/GMSDozeSimplified?label=Release&style=plastic)
+![GitHub Release Date](https://img.shields.io/github/release-date/adrianmmiller/GMSDozeSimplified?label=Release%20Date&style=plastic)
+![GitHub Releases](https://img.shields.io/github/downloads/adrianmmiller/GMSDozeSimplified/latest/total?label=Downloads%20%28Latest%20Release%29&style=plastic)
+![GitHub All Releases](https://img.shields.io/github/downloads/adrianmmiller/GMSDozeSimplified/total?label=Total%20Downloads%20%28All%20Releases%29&style=plastic)
 
 
