@@ -94,7 +94,7 @@ All other work is credited above and **no one may fork or re-present this module
 
 ### Changelog: ###
 
-Please see: https://github.com/adrianmmiller/GMSDozeSimplified/blob/main/CHANGELOG.md
+Please see: https://github.com/adrianmmiller/GMSDozeSimplified/blob/main/changelog.md
 
 
 ### Project Stats: ###
