@@ -58,6 +58,7 @@ set_permissions() {
   # set_perm $MODPATH/system/lib/libart.so 0 0 0644
   # set_perm /data/local/tmp/file.txt 0 0 644
   set_perm $MODPATH/system/bin/gmsc 0 0 0755
+  set_perm $MODPATH/system/xbin/gmsc 0 0 0755
 }
 
 ##########################################################################################
