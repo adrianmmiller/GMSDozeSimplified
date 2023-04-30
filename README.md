@@ -7,7 +7,7 @@ https://android.stackexchange.com/questions/143247/how-to-make-google-play-servi
 
 While there are other GMS Doze modules out there, and they can work perfectly fine across some devices, they can sometimes try and do too much, and can (depending on the device) break some functionality. This takes the original method, automates it, adds new paths for google.xml, and uses a couple of ideas from gloeyisks Universal GMS Doze module https://github.com/gloeyisk/universal-gms-doze/ where noted
 
-** Note: This, and other, GMS Doze modules do not seem to work any longer on Android 13. Your Mileage may vary. At this time there is no known fix im aware of, and the choice to Doze GMS may have been removed by hard coding to remove the workaround. Please dont create an issue if youre on Android 13 and it fails to work.
+**Note:** This, and other, GMS Doze modules do not seem to work any longer on Android 13. Your Mileage may vary. At this time there is no known fix im aware of, and the choice to Doze GMS may have been removed by hard coding to remove the workaround. Please dont create an issue if youre on Android 13 and it fails to work.
 
 ### What it does/How it works: ###
 
