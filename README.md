@@ -31,6 +31,7 @@ While there are other GMS Doze modules out there, and they can work perfectly fi
   ``` 
   #add <!=== prefix and --> suffix around relevant line in google.xml
   sed -i 's/<allow-in-power-save package=\"com.google.android.gms\" \/>/<!--  &  -->/' "$MODPATH/$finalgxmlpath/google.xml"
+  sed -i 's/<allow-in-data-usage-save package=\"com.google.android.gms\" \/>/<!--  &  -->/' "$MODPATH/$finalgxmlpath/google.xml"
   ```
 - Finally, it deletes any gms files in apps /data/data directies to try and prevent delayed messages (this is an optional troubleshooting step in gloeyisks module, i prefer to just do it on install).
 ```
