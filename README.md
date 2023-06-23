@@ -9,6 +9,8 @@ While there are other GMS Doze modules out there, and they can work perfectly fi
 
 **Note:** This, and other, GMS Doze modules may not work any longer on Android 13+. Your mileage may vary. The choice to Doze GMS may have been removed by hard coding to remove the workaround. Please dont create an issue if youre on Android 13+ and it fails to work.
 
+---
+
 ### What it does/How it works: ###
 
 - The module automates finding the correct path to google.xml under the following (currently known) paths:
@@ -40,7 +42,7 @@ cd /data/data
 find . -type f -name '*gms*' -delete
 
 ```
-
+---
 
 ### Installation/Usage: ###
 
@@ -56,6 +58,23 @@ The return will tell you if GMS is optimized or not
 
 The module will create a logfile (/storage/emulated/0/GMSDozeInstall.log) on install, which mirrors the information onscreen. If you have any issues, you'll need to start by looking there, and by opening an issue on this repo's Issues
 
+---
+
+### Uninstall: ###
+
+- Remove the magisk module via Magisk Manager
+
+Uninstall process will perform the delayed messages fix as above
+
+```
+cd /data/data
+
+find . -type f -name '*gms*' -delete
+
+```
+- Reboot
+
+---
 
 ### Troubleshooting: ###
 
@@ -80,9 +99,9 @@ to add your path anywhere between **find**  and **-not**, where the other paths 
 ```
 gmsc
 ````
-9) If all is well, please let me know via Issues or email (shown on y Github profile, so i can add the path and issue a new release.
+9) If all is well, please let me know via Issues or email (shown on my Github profile, so i can add the path and issue a new release.
 
-
+---
 
 ### Licensing: ###
 
@@ -93,11 +112,13 @@ https://github.com/Zackptg5/MMT-Extended/
 
 All other work is credited above and **no one may fork or re-present this module as their own for the purposes of trying to monetize this module or its content without all parties permission. The module comes specifically without an overall license for this intent.**
 
+---
 
 ### Changelog: ###
 
 Please see: https://github.com/adrianmmiller/GMSDozeSimplified/blob/main/changelog.md
 
+---
 
 ### Project Stats: ###
 
