@@ -1,8 +1,0 @@
-id=GMSDozeSimplified
-name=GMS Doze Simplified
-version=v1.5
-versionCode=1
-author=adrianmmiller
-description=GMS Doze Simplified
-support=https://github.com/adrianmmiller/GMSDozeSimplified
-updateJson=https://raw.githubusercontent.com/adrianmmiller/GMSDozeSimplified/main/update.json
